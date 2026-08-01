@@ -37,39 +37,15 @@
     <h1>Happy Birthday!</h1>
     <p>Enjoy the birthday tune.</p>
     <button onclick="playTune()">Play Birthday Tune</button>
+    <audio id="birthdayAudio" src="birthday-song.mp3" preload="auto"></audio>
   </div>
 
   <script>
     function playTune() {
-      const context = new (window.AudioContext || window.webkitAudioContext)();
-      const notes = [
-        { note: 392, duration: 0.4 },
-        { note: 392, duration: 0.4 },
-        { note: 440, duration: 0.4 },
-        { note: 392, duration: 0.4 },
-        { note: 523, duration: 0.4 },
-        { note: 494, duration: 0.6 },
-        { note: 392, duration: 0.4 },
-        { note: 392, duration: 0.4 },
-        { note: 440, duration: 0.4 },
-        { note: 392, duration: 0.4 },
-        { note: 587, duration: 0.4 },
-        { note: 523, duration: 0.6 }
-      ];
-
-      let time = context.currentTime + 0.1;
-      notes.forEach(({ note, duration }) => {
-        const osc = context.createOscillator();
-        const gain = context.createGain();
-        osc.type = 'triangle';
-        osc.frequency.setValueAtTime(note, time);
-        gain.gain.setValueAtTime(0.15, time);
-        gain.gain.exponentialRampToValueAtTime(0.001, time + duration);
-        osc.connect(gain);
-        gain.connect(context.destination);
-        osc.start(time);
-        osc.stop(time + duration);
-        time += duration + 0.03;
+      const audio = document.getElementById('birthdayAudio');
+      audio.currentTime = 0;
+      audio.play().catch(() => {
+        console.log('Audio playback was blocked. Click the button to try again.');
       });
     }
 
