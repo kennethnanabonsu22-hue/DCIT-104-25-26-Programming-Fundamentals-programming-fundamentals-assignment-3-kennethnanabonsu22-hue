@@ -1,5 +1,21 @@
-// Assignment 4: Matrix Operations
-// Perform matrix transpose, addition, or multiplication based on user input.
+// =============================================================================
+// PROGRAMMING FUNDAMENTALS — Assignment 4
+// =============================================================================
+//
+// TASK: Matrix Operations
+//
+// Write a JavaScript program that performs matrix operations using functions.
+//
+// -----------------------------------------------------------------------------
+// REQUIREMENTS
+// -----------------------------------------------------------------------------
+// - Read matrices from the user.
+// - Implement transpose, addition, and multiplication.
+// - Display the matrices in a neat format.
+//
+// =============================================================================
+// YOUR CODE BELOW
+// =============================================================================
 
 const readline = require('readline');
 

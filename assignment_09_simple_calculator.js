@@ -1,5 +1,22 @@
-// Assignment 9: Simple Calculator
-// Support basic arithmetic operations and handle division by zero safely.
+// =============================================================================
+// PROGRAMMING FUNDAMENTALS — Assignment 9
+// =============================================================================
+//
+// TASK: Console-Based Simple Calculator
+//
+// Build a calculator program that runs in the console and performs basic
+// arithmetic operations based on the user's input.
+//
+// -----------------------------------------------------------------------------
+// REQUIREMENTS
+// -----------------------------------------------------------------------------
+// - Each arithmetic operation should be written as its own function.
+// - Use a loop so the calculator keeps running until the user selects Quit.
+// - Division by zero must be handled safely.
+//
+// =============================================================================
+// YOUR CODE BELOW
+// =============================================================================
 
 const readline = require('readline');
 

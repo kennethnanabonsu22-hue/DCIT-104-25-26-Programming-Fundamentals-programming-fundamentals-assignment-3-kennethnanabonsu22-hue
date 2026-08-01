@@ -1,5 +1,22 @@
-// Assignment 8: Student Record Management System
-// Store student information, display records, and calculate average scores.
+// =============================================================================
+// PROGRAMMING FUNDAMENTALS — Assignment 8
+// =============================================================================
+//
+// TASK: Student Record Management System
+//
+// Build a console-based program that stores and manages student information.
+// Use an object to represent each student record containing a name, ID, and scores.
+//
+// -----------------------------------------------------------------------------
+// REQUIREMENTS
+// -----------------------------------------------------------------------------
+// - Store all records in an array.
+// - Display each student's information and average score.
+// - Handle invalid student IDs gracefully.
+//
+// =============================================================================
+// YOUR CODE BELOW
+// =============================================================================
 
 const readline = require('readline');
 

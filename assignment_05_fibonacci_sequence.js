@@ -1,5 +1,23 @@
-// Assignment 5: Fibonacci Sequence Generator
-// Print the first N Fibonacci terms and check whether a number belongs to the sequence.
+// =============================================================================
+// PROGRAMMING FUNDAMENTALS — Assignment 5
+// =============================================================================
+//
+// TASK: Fibonacci Sequence Generator
+//
+// Write a JavaScript program with two parts:
+// 1. Print the first N terms of the Fibonacci sequence.
+// 2. Check whether a number belongs to the sequence.
+//
+// -----------------------------------------------------------------------------
+// REQUIREMENTS
+// -----------------------------------------------------------------------------
+// - Use loops to generate the sequence.
+// - N must be a positive integer.
+// - Each part should be implemented as a separate function.
+//
+// =============================================================================
+// YOUR CODE BELOW
+// =============================================================================
 
 const readline = require('readline');
 

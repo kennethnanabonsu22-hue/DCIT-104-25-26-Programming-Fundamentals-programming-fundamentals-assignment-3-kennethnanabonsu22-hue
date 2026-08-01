@@ -1,5 +1,22 @@
-// Assignment 6: Multiplication Table Generator
-// Display the multiplication table for a chosen number or a range from 1 to N.
+// =============================================================================
+// PROGRAMMING FUNDAMENTALS — Assignment 6
+// =============================================================================
+//
+// TASK: Multiplication Table Generator
+//
+// Write a JavaScript program that generates multiplication tables using loops
+// and functions.
+//
+// -----------------------------------------------------------------------------
+// REQUIREMENTS
+// -----------------------------------------------------------------------------
+// - Print a single table for a chosen number or tables from 1 to N.
+// - N must be a positive integer.
+// - Each part must be implemented in its own function.
+//
+// =============================================================================
+// YOUR CODE BELOW
+// =============================================================================
 
 const readline = require('readline');
 

@@ -1,5 +1,39 @@
-// Assignment 3: Array Statistics Calculator
-// Read a list of numbers and compute the sum, average, maximum, and minimum.
+// =============================================================================
+// PROGRAMMING FUNDAMENTALS — Assignment 3
+// =============================================================================
+//
+// TASK: Array Statistics Calculator
+//
+// Write a JavaScript program that reads a collection of numbers from the user
+// and computes key statistical values using separate functions.
+//
+// -----------------------------------------------------------------------------
+// EXPECTED INPUT / OUTPUT EXAMPLE
+// -----------------------------------------------------------------------------
+//
+//   How many numbers? 5
+//   Enter number 1: 4
+//   Enter number 2: 7
+//   Enter number 3: 2
+//   Enter number 4: 9
+//   Enter number 5: 1
+//
+//   Results:
+//   Sum:     23
+//   Average: 4.6
+//   Maximum: 9
+//   Minimum: 1
+//
+// -----------------------------------------------------------------------------
+// REQUIREMENTS
+// -----------------------------------------------------------------------------
+// - Implement each calculation in its own function.
+// - N must be a positive integer.
+// - If the user enters 0 or a negative number, print an error message.
+//
+// =============================================================================
+// YOUR CODE BELOW
+// =============================================================================
 
 const readline = require('readline');
 

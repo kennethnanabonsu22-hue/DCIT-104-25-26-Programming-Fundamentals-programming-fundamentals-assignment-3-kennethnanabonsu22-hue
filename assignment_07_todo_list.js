@@ -1,5 +1,22 @@
-// Assignment 7: Console-Based To-Do List
-// Let the user add, view, delete, and quit from a simple task list.
+// =============================================================================
+// PROGRAMMING FUNDAMENTALS — Assignment 7
+// =============================================================================
+//
+// TASK: Console-Based To-Do List Application
+//
+// Build a simple to-do list program that runs in the console and lets the user
+// add, view, delete, and quit.
+//
+// -----------------------------------------------------------------------------
+// REQUIREMENTS
+// -----------------------------------------------------------------------------
+// - Store tasks in an array.
+// - Use a loop to keep the menu running until the user quits.
+// - Each feature should be implemented in its own function.
+//
+// =============================================================================
+// YOUR CODE BELOW
+// =============================================================================
 
 const readline = require('readline');
 
