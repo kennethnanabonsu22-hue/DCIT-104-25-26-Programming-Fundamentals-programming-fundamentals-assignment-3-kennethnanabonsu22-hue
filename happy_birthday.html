@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff7aa2, #ffd166);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .card {
+      background: rgba(0,0,0,0.2);
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Happy Birthday!</h1>
+    <p>Enjoy the birthday tune.</p>
+    <button onclick="playTune()">Play Birthday Tune</button>
+  </div>
+
+  <script>
+    function playTune() {
+      const context = new (window.AudioContext || window.webkitAudioContext)();
+      const notes = [
+        { note: 392, duration: 0.4 },
+        { note: 392, duration: 0.4 },
+        { note: 440, duration: 0.4 },
+        { note: 392, duration: 0.4 },
+        { note: 523, duration: 0.4 },
+        { note: 494, duration: 0.6 },
+        { note: 392, duration: 0.4 },
+        { note: 392, duration: 0.4 },
+        { note: 440, duration: 0.4 },
+        { note: 392, duration: 0.4 },
+        { note: 587, duration: 0.4 },
+        { note: 523, duration: 0.6 }
+      ];
+
+      let time = context.currentTime + 0.1;
+      notes.forEach(({ note, duration }) => {
+        const osc = context.createOscillator();
+        const gain = context.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(note, time);
+        gain.gain.setValueAtTime(0.15, time);
+        gain.gain.exponentialRampToValueAtTime(0.001, time + duration);
+        osc.connect(gain);
+        gain.connect(context.destination);
+        osc.start(time);
+        osc.stop(time + duration);
+        time += duration + 0.03;
+      });
+    }
+
+    window.addEventListener('load', () => {
+      playTune();
+    });
+  </script>
+</body>
+</html>
