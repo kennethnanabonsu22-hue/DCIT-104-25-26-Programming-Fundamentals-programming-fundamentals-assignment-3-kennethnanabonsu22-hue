@@ -1,3 +1,6 @@
+// Assignment 9: Simple Calculator
+// Support basic arithmetic operations and handle division by zero safely.
+
 const readline = require('readline');
 
 const rl = readline.createInterface({

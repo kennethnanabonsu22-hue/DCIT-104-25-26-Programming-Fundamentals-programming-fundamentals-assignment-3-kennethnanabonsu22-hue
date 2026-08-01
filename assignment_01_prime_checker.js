@@ -1,3 +1,6 @@
+// Assignment 1: Prime Number Checker
+// Prompt the user to enter a number and print whether it is prime.
+
 const readline = require('readline');
 
 const rl = readline.createInterface({

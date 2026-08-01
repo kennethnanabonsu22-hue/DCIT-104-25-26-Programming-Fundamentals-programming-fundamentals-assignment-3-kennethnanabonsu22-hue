@@ -1,3 +1,6 @@
+// Assignment 7: Console-Based To-Do List
+// Let the user add, view, delete, and quit from a simple task list.
+
 const readline = require('readline');
 
 const rl = readline.createInterface({

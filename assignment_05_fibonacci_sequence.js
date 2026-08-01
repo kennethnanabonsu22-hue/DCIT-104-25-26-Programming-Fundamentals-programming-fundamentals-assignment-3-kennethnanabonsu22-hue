@@ -1,3 +1,6 @@
+// Assignment 5: Fibonacci Sequence Generator
+// Print the first N Fibonacci terms and check whether a number belongs to the sequence.
+
 const readline = require('readline');
 
 const rl = readline.createInterface({

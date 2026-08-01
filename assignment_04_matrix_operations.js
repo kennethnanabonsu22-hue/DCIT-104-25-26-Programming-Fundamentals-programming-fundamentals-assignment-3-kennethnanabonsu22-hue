@@ -1,3 +1,6 @@
+// Assignment 4: Matrix Operations
+// Perform matrix transpose, addition, or multiplication based on user input.
+
 const readline = require('readline');
 
 const rl = readline.createInterface({

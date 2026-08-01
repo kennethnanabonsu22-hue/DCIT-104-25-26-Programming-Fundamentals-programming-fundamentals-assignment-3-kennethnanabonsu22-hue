@@ -1,3 +1,6 @@
+// Assignment 2: Student Grade System
+// Read a score and output the correct letter grade based on the grading scale.
+
 const readline = require('readline');
 
 const rl = readline.createInterface({

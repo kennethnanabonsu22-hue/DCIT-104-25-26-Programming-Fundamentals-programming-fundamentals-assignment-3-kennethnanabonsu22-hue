@@ -1,3 +1,6 @@
+// Assignment 8: Student Record Management System
+// Store student information, display records, and calculate average scores.
+
 const readline = require('readline');
 
 const rl = readline.createInterface({

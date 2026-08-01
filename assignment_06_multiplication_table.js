@@ -1,3 +1,6 @@
+// Assignment 6: Multiplication Table Generator
+// Display the multiplication table for a chosen number or a range from 1 to N.
+
 const readline = require('readline');
 
 const rl = readline.createInterface({

@@ -1,3 +1,6 @@
+// Assignment 3: Array Statistics Calculator
+// Read a list of numbers and compute the sum, average, maximum, and minimum.
+
 const readline = require('readline');
 
 const rl = readline.createInterface({
